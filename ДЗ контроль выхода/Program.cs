@@ -15,9 +15,13 @@ namespace ДЗ_контроль_выхода
             {
                Console.WriteLine($"Груз поднялся на {specifiedLiftDepth} метров");
 
-                if (specifiedLiftDepth == 7)
+                string stopCommand = "exit";
+                string userInput;
+                userInput = Console.ReadLine();
+
+                if (userInput == stopCommand)
                 {
-                    Console.WriteLine("Лифт застрял!!");
+                    Console.WriteLine("Остановка лифта!!");
                         break;
                 }
             }
